@@ -1,0 +1,9 @@
+.blog img {
+    width: 845px;
+    height: 450px;
+    border-radius: 8px;
+}
+.name{
+    text-align: left;
+    margin-left: 100px;
+}
