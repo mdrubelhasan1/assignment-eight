@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './BlogContainer.css'
 import Blog from '../Blog/Blog';
+import TimeSpentCount from '../TimeSpentCount/TimeSpentCount';
+import BookMarkedBlogs from '../BookMarkedBlogs/BookMarkedBlogs';
 
 
 const BlogContainer = () => {
@@ -12,6 +14,7 @@ const BlogContainer = () => {
             .then(data => setBlogs(data))
     }, [])
     return (
+
         <div className='blog-container'>
             <div className='container'>
                 {
@@ -20,13 +23,14 @@ const BlogContainer = () => {
                         blog={blog}
                     ></Blog>)
                 }
-
             </div>
-            <div className='bookmark'>
-                <h3>Spent time on read:</h3>
+            <div>
+                <TimeSpentCount></TimeSpentCount>
+                <BookMarkedBlogs></BookMarkedBlogs>
             </div>
-
         </div>
+
+
     );
 };
 

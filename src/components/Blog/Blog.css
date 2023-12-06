@@ -1,3 +1,8 @@
+.blog{
+    margin-bottom: 100px;
+}
+
+
 .blog img {
     width: 845px;
     height: 450px;
@@ -5,5 +10,12 @@
 }
 .name{
     text-align: left;
-    margin-left: 100px;
+    margin-left: 10px;
+}
+.read-time{
+    display: flex;
+    justify-content: space-between;
+}
+.time a{
+    text-decoration: none;
 }
