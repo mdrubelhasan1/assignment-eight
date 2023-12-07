@@ -5,7 +5,7 @@ import TimeSpentCount from '../TimeSpentCount/TimeSpentCount';
 import BookMarkedBlogs from '../BookMarkedBlogs/BookMarkedBlogs';
 
 
-const BlogContainer = () => {
+const BlogContainer = ({handleAddToBookMark , handleMarkRead}) => {
     const [blogs, setBlogs] = useState([])
 
     useEffect(() => {
@@ -13,6 +13,7 @@ const BlogContainer = () => {
             .then(res => res.json())
             .then(data => setBlogs(data))
     }, [])
+    
     return (
 
         <div className='blog-container'>
@@ -21,6 +22,8 @@ const BlogContainer = () => {
                     blogs.map(blog => <Blog
                         key={blog.id}
                         blog={blog}
+                        handleAddToBookMark={handleAddToBookMark}
+                        handleMarkRead={handleMarkRead}
                     ></Blog>)
                 }
             </div>

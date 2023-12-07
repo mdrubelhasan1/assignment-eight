@@ -5,6 +5,7 @@ const BookMarkedBlogs = () => {
     return (
         <div className='bookmarked-blogs'>
             <h4>Bookmarked Blogs: </h4>
+            
         </div>
     );
 };

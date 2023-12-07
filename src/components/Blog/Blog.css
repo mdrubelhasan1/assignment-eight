@@ -1,5 +1,6 @@
 .blog{
     margin-bottom: 100px;
+
 }
 
 
@@ -18,4 +19,18 @@
 }
 .time a{
     text-decoration: none;
+    margin-right: 50px;
+}
+.btn-marked{
+    /* border: none; */
+    align-items: start;
+
+}
+.bookmark-section{
+    display: flex;
+    /* height: 20px; */
+}
+.button-bookmark{
+    margin-top: 20px;
+    height: 20px;
 }
